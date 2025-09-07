@@ -1,0 +1,16 @@
+{
+  "name": "t3-api",
+  "version": "0.5.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "pg": "^8.11.3"
+  }
+}

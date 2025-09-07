@@ -1,0 +1,72 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "t3_text": {
+          "type": "standard",
+          "stopwords": "_english_"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": {
+        "type": "keyword"
+      },
+      "object_type": {
+        "type": "keyword"
+      },
+      "title": {
+        "type": "text",
+        "analyzer": "t3_text"
+      },
+      "summary": {
+        "type": "text",
+        "analyzer": "t3_text"
+      },
+      "pathways": {
+        "type": "keyword"
+      },
+      "sub_pathways": {
+        "type": "keyword"
+      },
+      "engagement_levels": {
+        "type": "keyword"
+      },
+      "keywords": {
+        "type": "keyword"
+      },
+      "publish_date": {
+        "type": "date"
+      },
+      "city": {
+        "type": "keyword"
+      },
+      "county": {
+        "type": "keyword"
+      },
+      "state": {
+        "type": "keyword"
+      },
+      "zip": {
+        "type": "keyword"
+      },
+      "coverage": {
+        "type": "keyword"
+      },
+      "is_online": {
+        "type": "boolean"
+      },
+      "lat": {
+        "type": "float"
+      },
+      "lon": {
+        "type": "float"
+      },
+      "location": {
+        "type": "geo_point"
+      }
+    }
+  }
+}
